@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>সিএসএস উদাহরণ</title>
+  <style>
+  ul.circle {
+    list-style-type: circle;
+  }
+  ul.square {
+    list-style-type: square;
+  }
+  ol.roman {
+    list-style-type: upper-roman;
+  }
+  ol.alpha {
+    list-style-type: lower-alpha;
+  }
+  ul {
+    list-style-image: url('../images/sqpurple.gif');
+  }
+  ul.inside {
+    list-style-position: inside;
+  }
+  ul.outside {
+    list-style-position: outside;
+  }
+  ul {
+    background: lightgreen;
+    padding: 20px;
+  }
+  ul li {
+    background: lightcyan;
+    margin-left: 25px;
+    padding: 5px;
+    color: red;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td, th {
+    padding: 10px;
+    text-align: left;
+  }
+  tr:nth-child(even) {
+    background-color: lightpink;
+  }
+  div {
+    overflow-x: auto;
+  }
+  </style>
+</head>
+<body>
+
+  <p>আনঅর্ডার লিস্টের উদাহরণঃ</p>
+  <ul class="circle">
+    <li>মোবাইল</li>
+    <li>ল্যাপটপ</li>
+    <li>কম্পিউটার</li>
+  </ul>
+  <ul class="square">
+    <li>মোবাইল</li>
+    <li>ল্যাপটপ</li>
+    <li>কম্পিউটার</li>
+  </ul>
+  <p>অর্ডার লিস্টের  উদাহরণঃ</p>
+  <ol class="roman">
+    <li>মোবাইল</li>
+    <li>ল্যাপটপ</li>
+    <li>কম্পিউটার</li>
+  </ol>
+    <ol class="alpha">
+    <li>মোবাইল</li>
+    <li>ল্যাপটপ</li>
+    <li>কম্পিউটার</li>
+  </ol>
+  <p>ইমেজ লিস্ট মার্কিং</p>
+  <ul>
+    <li>মোবাইল</li>
+    <li>ল্যাপটপ</li>
+    <li>কম্পিউটার</li>
+  </ul>
+  <p>list-style-position: inside; এর ব্যবহার</p>
+  <ul class="inside">
+    <li>মোবাইল</li>
+    <li>ল্যাপটপ</li>
+    <li>কম্পিউটার</li>
+  </ul>
+
+  <p>list-style-position: outside; এর ব্যবহার</p>
+  <ul class="outside">
+    <li>মোবাইল</li>
+    <li>ল্যাপটপ</li>
+    <li>কম্পিউটার</li>
+  </ul>
+  <h2>লিস্ট এবং লিস্ট আইটেম কালার</h2>
+  <ul>
+    <li>মোবাইল</li>
+    <li>ল্যাপটপ</li>
+    <li>কম্পিউটার</li>
+  </ul>
+  <h3>রেসপন্সিভ টেবিল</h3>
+  <div class="responsive">
+    <table>
+      <tr>
+        <th>নাম</th>
+        <th>মূল বেতন</th>
+        <th>মহার্ঘ ভাতা</th>
+        <th>বাড়ি ভাড়া</th>
+        <th>যাতায়াত ভাতা</th>
+        <th>শিক্ষা ভাতা</th>
+        <th>মোট বেতন</th>
+      </tr>
+      <tr>
+        <td>আতাউর</td>
+        <td>৩০০০০</td>
+        <td>১৫০০০</td>
+        <td>১০০০০</td>
+        <td>৫০০০</td>
+        <td>২০০০</td>
+        <td>৬২০০০</td>
+      </tr>
+      <tr>
+        <td>নিজাম</td>
+        <td>২৮০০০</td>
+        <td>১৪০০০</td>
+        <td>৮০০০</td>
+        <td>৪০০০</td>
+        <td>২০০০</td>
+        <td>৫৬০০০</td>
+      </tr>
+      <tr>
+        <td>ভিভিয়ান</td>
+        <td>২৬০০০</td>
+        <td>১৩০০০</td>
+        <td>৭০০০</td>
+        <td>৪০০০</td>
+        <td>২০০০</td>
+        <td>৫২০০০</td>
+      </tr>
+    </table>
+  </div>
+  <span>span</span>
+  <input placeholder="input">
+</body>
+</html>

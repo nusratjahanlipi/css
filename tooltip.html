@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.tooltip {
+    border-bottom: 1px dotted black;
+    display: inline-block;
+    position: relative;
+}
+.tooltip .tooltiptext {
+    background-color: teal;
+    border-radius: 6px;
+    color: white;
+    padding: 5px 0;
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+    width: 120px;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}.dropbtn {
+    background-color: teal;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: orange;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: bisque;
+    color: teal;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: orangered;
+}
+</style>
+</head>
+<body>
+
+
+
+<h3>Clik here:</h3>
+<div class="tooltip">Lipi
+  <span class="tooltiptext">Hello.....</Hello></span>
+</div>
+<h2>এলাইন ড্রপডাউন কন্টেন্ট</h2>
+<div class="dropdown" style="float:left;">
+  <button class="dropbtn">Left</button>
+  <div class="dropdown-content" style="left:0;">
+    <a href="#">কন্টেন্ট ১</a>
+    <a href="#">কন্টেন্ট ২</a>
+    <a href="#">কন্টেন্ট ৩</a>
+  </div>
+</div>
+<div class="dropdown" style="float:right;">
+  <button class="dropbtn">Right</button>
+    <div class="dropdown-content">
+    <a href="#">কন্টেন্ট ১</a>
+    <a href="#">কন্টেন্ট ২</a>
+    <a href="#">কন্টেন্ট ৩</a>
+  </div>
+</div> 
+</body>
+</html>
+
+
+
+ 

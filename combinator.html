@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            background: greenyellow;
+            color:black;
+            border:4px dotted red;
+        }
+        div > p {
+    background: green;
+    color: white;
+    border: 3px dotted red;
+  }
+  nav + p {
+    background: green;
+    color: white;
+    border: 3px dotted red;
+  }
+  
+   nav ~ p{
+    background: rgb(128, 115, 0);
+    color: rgb(255, 255, 255);
+    border: 3px dotted rgb(0, 255, 21);
+  }
+    </style>
+</head>
+<body>
+    <div>
+        <p>এই প্যারাগ্রাফটি div এর ডিসেন্ডেন্ট তাই এটি সিলেক্ট হবে।</p>
+        <p>এই প্যারাগ্রাফটিও div এর ডিসেন্ডেন্ট তাই এটিও সিলেক্ট হবে।</p>
+        <span><p>এই প্যারাগ্রাফটিও div এর ডিসেন্ডেন্ট তাই এটিও সিলেক্ট হবে।</p></span>
+      </div>
+    
+      <p>এই প্যারাগ্রাফটি div এর বাহিরে তাই এটি সিলেক্ট হবেনা।</p> 
+      <p>এই প্যারাগ্রাফটিও div এর বাহিরে তাই এটিও সিলেক্ট হবে না।</p>
+      <nav>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, numquam?</p>
+        <p>এই প্যারাগ্রাফটওি div এর চাইল্ড তাই এটিও সিলেক্ট হবে না।</p>
+        <span><p>এই প্যারাগ্রাফটি div এর উত্তরসূরী তাই এটি সিলেক্ট হবে না।</p></span>
+      </nav>
+    
+      <p>lorem10।</p> 
+      <p>এই প্যারাগ্রাফটি div এর পরবর্তী সহোদর নয়, তাই এটি সিলেক্ট হবে না।</p>
+      <p>এই প্যারাগ্রাফটি div এর সাধারণ সহোদর(genaral sibling) তাই এটি সিলেক্ট হবে।</p> 
+      <p>এই প্যারাগ্রাফটিও div এর সাধারণ সহোদর(genaral sibling) তাই এটিও সিলেক্ট হবে।</p>
+    
+</body>
+</html>
